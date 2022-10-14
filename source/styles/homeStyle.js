@@ -97,7 +97,7 @@ const homeStyle = StyleSheet.create({
     carTypeTitle: {
         fontFamily: 'Lato-Bold',
         fontSize: 20,
-        color: colors.black,
+        color: colors.black
     },
 
 })  
