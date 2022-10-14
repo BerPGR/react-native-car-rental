@@ -8,7 +8,7 @@ const homeStyle = StyleSheet.create({
     },
 
     headerWrapper: {
-        marginHorizontal: 20,
+        paddingHorizontal: 20,
         marginTop: 25,
         flexDirection: "row",
         justifyContent: "space-between",
@@ -26,7 +26,7 @@ const homeStyle = StyleSheet.create({
     },
 
     brandsWrapper: {
-        marginHorizontal: 20,
+        paddingHorizontal: 20,
         marginTop: 20
     },
 
@@ -39,10 +39,11 @@ const homeStyle = StyleSheet.create({
     brandsSubtitle: {
         fontFamily: 'Lato-Regular',
         fontSize: 20,
-        color: colors.darkGray,
+        color: colors.black,
         marginTop: 14
     },
 
+    /* Brand Discover Style */
     brandsDiscoverItemsWrapper: {
         paddingVertical: 5,
     },
@@ -69,19 +70,21 @@ const homeStyle = StyleSheet.create({
         color: colors.black
     },
 
+    /* Car type Style */
     carTypesWrapper: {
         marginHorizontal: 20,
-        marginTop: 30
+        marginTop: 40
     },
 
     carTypesTitle: {
         fontSize: 24,
         fontFamily: 'Lato-Bold',
-        color: colors.purple
+        color: colors.purple,
+        width: '80%'
     },
 
     carTypesItemsWrapper: {
-        paddingVertical: 15
+        paddingVertical: 10
     },
 
     activityTypeWrapper: {
@@ -100,6 +103,99 @@ const homeStyle = StyleSheet.create({
         color: colors.black
     },
 
+    /* Rent car style */
+    rentCarWrapper: {
+        paddingHorizontal: 20,
+        marginTop: 40
+    },
+
+    rentCarTitle: {
+        fontFamily: 'Lato-Bold',
+        fontSize: 24,
+        color: colors.purple,
+        width: '85%'
+    },
+
+    rentCarCardWrapper: {
+        backgroundColor: colors.white,
+        borderRadius: 25,
+        paddingLeft: 15,
+        flexDirection: 'row',
+        overflow: 'hidden',
+        shadowColor: colors.black,
+        shadowOffset: {
+            width: 0,
+            height: 2
+        },
+        shadowOpacity: 0.5,
+        shadowRadius: 10,
+        elevation: 3
+    },
+    
+    cardLeft: {
+        alignItems: "center",
+        flexDirection: "column"
+    },
+
+    cardImage: {
+        width: 130,
+        height: 140,
+        resizeMode: "contain",
+    },
+
+    cardRightTop: {
+        marginLeft: 10,
+        marginTop: 15,
+        flexDirection: "row",
+    },
+
+    rentTitle: {
+        fontFamily: 'Lato-Bold',
+        fontSize: 20,
+        color: colors.purple
+    },
+
+    rightCardSection: {
+        position: "absolute",
+        marginLeft: 130,
+        flexDirection: "column",
+        justifyContent: "flex-end"
+    },
+
+    rentSubTitle: {
+        fontFamily: 'Lato-Regular',
+        fontSize: 16,
+        color: colors.black
+    },
+
+    cardRightBottom: {
+        flexDirection: "row",
+        alignItems: "center",
+        marginTop: 35,
+        marginLeft: 10
+    },
+
+    carRentRating: {
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "center"
+    },
+
+    rating: {
+        fontSize: 16,
+        fontFamily: 'Lato-Regular',
+        color: colors.black,
+        marginLeft: 5,
+        marginRight: 80
+    },
+
+    addCarButton: {
+        backgroundColor: colors.purple,
+        paddingHorizontal: 40,
+        paddingVertical: 20,
+        borderBottomRightRadius: 25,
+        borderTopLeftRadius: 25
+    }
 })  
 
 
