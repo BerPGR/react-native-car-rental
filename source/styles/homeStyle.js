@@ -15,6 +15,10 @@ const homeStyle = StyleSheet.create({
         alignItems: "center"
     },
 
+    headerIcons: {
+        flexDirection: "row",
+    },
+
     profile: {
         width: 40,
         height: 40,
@@ -40,7 +44,7 @@ const homeStyle = StyleSheet.create({
     },
 
     brandsDiscoverItemsWrapper: {
-        paddingVertical: 10,
+        paddingVertical: 5,
     },
 
     brandsTouchWrapper: {
@@ -62,7 +66,40 @@ const homeStyle = StyleSheet.create({
         marginTop: 10,
         fontFamily: 'Lato-Bold',
         fontSize: 20,
+        color: colors.black
     },
+
+    carTypesWrapper: {
+        marginHorizontal: 20,
+        marginTop: 30
+    },
+
+    carTypesTitle: {
+        fontSize: 24,
+        fontFamily: 'Lato-Bold',
+        color: colors.purple
+    },
+
+    carTypesItemsWrapper: {
+        paddingVertical: 15
+    },
+
+    activityTypeWrapper: {
+        alignItems: "center",
+        marginRight: 23,
+    },
+
+    carTypeImage: {
+        width: 60,
+        height: 60
+    },
+
+    carTypeTitle: {
+        fontFamily: 'Lato-Bold',
+        fontSize: 20,
+        color: colors.black,
+    },
+
 })  
 
 

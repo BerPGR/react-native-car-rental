@@ -23,7 +23,7 @@ const TabNavigator = () => {
     screenOptions={{
       tabBarStyle: styles.tabBar,
       tabBarActiveTintColor: colors.purple,
-      tabBarInactiveTintColor: colors.gray,
+      tabBarInactiveTintColor: colors.darkGray,
       tabBarShowLabel: false,
       headerShown: false
     }}
