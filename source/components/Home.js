@@ -8,6 +8,7 @@ import profilePicture from '../images/profilePicture.png'
 
 import Feather from 'react-native-vector-icons/Feather'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import Entypo from 'react-native-vector-icons/Entypo'
 import colors from "../colors/colors";
 
 import topBrandsData from '../data/topBrandsData'
@@ -16,6 +17,7 @@ import rentCarData from '../data/rentCarData'
 
 Feather.loadFont()
 MaterialCommunityIcons.loadFont();
+Entypo.loadFont();
 
 const Home = ({navigation}) => {
 
@@ -53,7 +55,7 @@ const Home = ({navigation}) => {
             {/* Header */}
                 <SafeAreaView>
                     <View style={homeStyle.headerWrapper}>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => navigation.navigate('Account')}>
                             <Image source={profilePicture} style={homeStyle.profile}/>
                         </TouchableOpacity>
                         <View style={homeStyle.headerIcons}>
@@ -152,7 +154,9 @@ const Home = ({navigation}) => {
                     }
                 </View>
 
-
+                <View style={homeStyle.madeWithLoveWrapper}>
+                    <Text style={homeStyle.loveText}>Made with <Entypo name="heart" size={16} color={colors.red}/> by Benny</Text>
+                </View>
             </ScrollView>
         </View>
     )

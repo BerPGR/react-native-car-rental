@@ -195,6 +195,19 @@ const homeStyle = StyleSheet.create({
         paddingVertical: 20,
         borderBottomRightRadius: 25,
         borderTopLeftRadius: 25
+    },
+
+    madeWithLoveWrapper: {
+        paddingHorizontal: 20,
+        alignItems: "center",
+        marginTop: 20
+    },
+
+    loveText: {
+        fontFamily: 'Lato-Bold',
+        fontSize: 16,
+        color: colors.black,
+        marginBottom: 20
     }
 })  
 
