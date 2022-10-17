@@ -41,7 +41,7 @@ const Home = ({navigation}) => {
 
     const renderCarTypesItem = ({item}) => {
         return (
-            <TouchableOpacity style={homeStyle.activityTypeWrapper}>
+            <TouchableOpacity onPress={() => navigation.navigate('Types')} style={homeStyle.activityTypeWrapper}>
                 <Image source={item.image} style={homeStyle.carTypeImage}/>
                 <Text style={homeStyle.carTypeTitle}>{item.title}</Text>
             </TouchableOpacity>

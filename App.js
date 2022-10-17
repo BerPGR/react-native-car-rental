@@ -6,6 +6,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import Home from './source/components/Home';
 import Details from './source/components/Details';
 import Wishlist from './source/components/Wishlist'
+import Types from './source/components/Types'
+
 import colors from './source/colors/colors';
 
 import Entypo from 'react-native-vector-icons/Entypo'
@@ -58,6 +60,7 @@ const App = () => {
         <Stack.Screen name="TabNavigator" component={TabNavigator} options={{headerShown: false}}/>
         <Stack.Screen name='CarsRent' component={CarsRent} options={{headerShown: false}}/>
         <Stack.Screen name="Details" component={Details} options={{headerShown: false}}/>
+        <Stack.Screen name="Types" component={Types} options={{headerShown: false}}/>
         <Stack.Screen name="Whishlist" component={Wishlist} options={{headerShown: false}}/>
         <Stack.Screen name="Account" component={Account} options={{headerShown: false}}/>
       </Stack.Navigator>

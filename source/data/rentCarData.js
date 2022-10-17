@@ -24,7 +24,7 @@ const rentCarData = [
         model: 'Wrangler',
         brand: 'Jeep',
         year: '2013',
-        condition: 'New',
+        condition: 'Used',
         rating: 5,
         pricePerDay: 15,
         image: require('../images/jeep.png')
@@ -34,7 +34,7 @@ const rentCarData = [
         model: 'Model 3',
         brand: 'Tesla',
         year: '2021',
-        condition: 'Used',
+        condition: 'New',
         rating: 4,
         pricePerDay: 22,
         image: require('../images/tesla.png')
