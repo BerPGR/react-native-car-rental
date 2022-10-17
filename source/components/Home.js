@@ -34,7 +34,7 @@ const Home = ({navigation}) => {
                     imageStyle={homeStyle.brandItemImage}
                 >
                 </ImageBackground>
-                <Text style={homeStyle.brandItemTitle}>{item.name}</Text>
+                <Text style={homeStyle.brandItemTitle}>{item.brand}</Text>
             </TouchableOpacity>
         )
     }
@@ -107,7 +107,9 @@ const Home = ({navigation}) => {
                     <Text style={homeStyle.rentCarTitle}>Need to rent a car? Here's a few choices for you</Text>
                     {
                         rentCarData.map(item => (
-                            <TouchableOpacity key={item.id}>
+                            <TouchableOpacity 
+                            onPress={() => navigation.navigate('CarsRent', {item: item})} 
+                            key={item.id}>
                                 <View style={[homeStyle.rentCarCardWrapper, {
                                     marginTop: item.id === 'rent-1' ? 10 : 20
                                 }]}>
@@ -154,6 +156,7 @@ const Home = ({navigation}) => {
                     }
                 </View>
 
+                {/* Made With love Section */}
                 <View style={homeStyle.madeWithLoveWrapper}>
                     <Text style={homeStyle.loveText}>Made with <Entypo name="heart" size={16} color={colors.red}/> by Benny</Text>
                 </View>

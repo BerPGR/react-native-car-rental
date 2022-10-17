@@ -1,12 +1,13 @@
 const rentCarData = [
     {
         id: 'rent-1',
-        model: 'GT-R',
-        brand: 'Nissan',
+        model: 'Mustang',
+        brand: 'Ford',
         year: '2014',
         condition: 'Used',
         rating: 4,
-        image: require('../images/GTR.png')
+        pricePerDay: 12,
+        image: require('../images/mustang.png')
     },
     {
         id: 'rent-2',
@@ -14,8 +15,9 @@ const rentCarData = [
         brand: 'Toyota',
         year: '2019',
         condition: 'New',
-        rating: 4,
-        image: require('../images/supra.png')
+        rating: 5,
+        pricePerDay: 18,
+        image: require('../images/mk5.png')
     },
     {
         id: 'rent-3',
@@ -24,6 +26,7 @@ const rentCarData = [
         year: '2013',
         condition: 'New',
         rating: 5,
+        pricePerDay: 15,
         image: require('../images/jeep.png')
     },
     {
@@ -33,6 +36,7 @@ const rentCarData = [
         year: '2021',
         condition: 'Used',
         rating: 4,
+        pricePerDay: 22,
         image: require('../images/tesla.png')
     },
 ]

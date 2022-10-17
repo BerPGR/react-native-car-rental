@@ -1,27 +1,27 @@
 const topBrandsData = [
     {
         id: 'brand-1',
-        name: 'Mercedes',
+        brand: 'Mercedes',
         image: require('../images/Mercedes-Logo.svg')
     },
     {
         id: 'brand-2',
-        name: 'Jaguar',
+        brand: 'Jaguar',
         image: require('../images/Jaguar-Logo.png')
     },
     {
         id: 'brand-3',
-        name: 'BMW',
+        brand: 'BMW',
         image: require('../images/bmw.png')
     },
     {
         id: 'brand-4',
-        name: 'Audi',
+        brand: 'Audi',
         image: require('../images/audi.png')
     },
     {
         id: 'brand-5',
-        name: 'Dodge',
+        brand: 'Dodge',
         image: require('../images/dodge.png')
     }
 ]

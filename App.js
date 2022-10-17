@@ -15,6 +15,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 import { Text, View, StyleSheet } from 'react-native';
 import Account from './source/components/Account';
+import CarsRent from './source/components/CarsRent';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -55,6 +56,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="TabNavigator" component={TabNavigator} options={{headerShown: false}}/>
+        <Stack.Screen name='CarsRent' component={CarsRent} options={{headerShown: false}}/>
         <Stack.Screen name="Details" component={Details} options={{headerShown: false}}/>
         <Stack.Screen name="Whishlist" component={Wishlist} options={{headerShown: false}}/>
         <Stack.Screen name="Account" component={Account} options={{headerShown: false}}/>
