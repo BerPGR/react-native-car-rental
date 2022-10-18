@@ -69,7 +69,7 @@ const carsStyle = StyleSheet.create({
     descriptionText: {
         marginTop: 15,
         color: colors.white,
-        fontFamily: 'Lato-Italic',
+        fontFamily: 'Lato-Bold',
         fontSize: 24
     },
 
