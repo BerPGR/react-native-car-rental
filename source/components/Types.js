@@ -46,7 +46,7 @@ const Types = ({route, navigation}) => {
                     <Text style={typeStyle.carTypesTitle}>All {item.type} Cars</Text>
                     {
                         cars.map(car => (
-                            <TouchableOpacity>
+                            <TouchableOpacity key={car.id}>
                                 <View style={typeStyle.allTypesWrapper}>
                                     <View style={typeStyle.cardLeft}>
                                         <Image source={car.image} style={typeStyle.cardImage}/>

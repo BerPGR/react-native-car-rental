@@ -40,9 +40,6 @@ const TabNavigator = () => {
       <Tab.Screen name="Home" component={Home} options={{
         tabBarIcon: ({color}) => <Entypo name="home" size={30} color={color}/>,
       }}/>
-      <Tab.Screen name="Details" component={Details} options={{
-        tabBarIcon: ({color}) => <AntDesign name="car" size={30} color={color}/>,
-      }}/>
       <Tab.Screen name='Wishlist' component={Wishlist} options={{
         tabBarIcon: ({color}) => <Feather name='star' size={30} color={color}/>
       }}/>
@@ -58,10 +55,10 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="TabNavigator" component={TabNavigator} options={{headerShown: false}}/>
-        <Stack.Screen name='CarsRent' component={CarsRent} options={{headerShown: false}}/>
         <Stack.Screen name="Details" component={Details} options={{headerShown: false}}/>
+        <Stack.Screen name='CarsRent' component={CarsRent} options={{headerShown: false}}/>
         <Stack.Screen name="Types" component={Types} options={{headerShown: false}}/>
-        <Stack.Screen name="Whishlist" component={Wishlist} options={{headerShown: false}}/>
+        <Stack.Screen name="Wishlist" component={Wishlist} options={{headerShown: false}}/>
         <Stack.Screen name="Account" component={Account} options={{headerShown: false}}/>
       </Stack.Navigator>
     </NavigationContainer>

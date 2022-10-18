@@ -4,7 +4,8 @@ const topBrandsData = [
         brand: 'Mercedes',
         image: require('../images/Mercedes-Logo.svg'),
         cars: [
-            {
+            {   
+                id: 1,
                 brand: 'Mercedes',
                 model: 'E-Class AMG',
                 type: 'Sedan',
@@ -16,6 +17,7 @@ const topBrandsData = [
                 image: require('../images/carstobuy/e-classamg.png')
             },
             {
+                id: 2,
                 brand: 'Mercedes',
                 model: 'GLS 450',
                 type: 'SUV',
@@ -27,6 +29,7 @@ const topBrandsData = [
                 image: require('../images/carstobuy/gls.png')
             },
             {
+                id: 3,
                 brand: 'Mercedes',
                 model: 'EQS 580',
                 type: 'Sedan',
@@ -38,6 +41,7 @@ const topBrandsData = [
                 image: require('../images/carstobuy/eqs.png')
             },
             {
+                id: 4,
                 brand: 'Mercedes',
                 model: 'AMG GT',
                 type: 'Coupe',
@@ -56,6 +60,7 @@ const topBrandsData = [
         image: require('../images/Jaguar-Logo.png'),
         cars: [
             {
+                id: 5,
                 brand: 'Jaguar',
                 model: 'XF R-Sport',
                 type: 'Sport',
@@ -67,6 +72,7 @@ const topBrandsData = [
                 image: require('../images/carstobuy/xfrsport.png')
             },
             {
+                id: 6,
                 brand: 'Jaguar',
                 model: 'F-TYPE R',
                 type: 'Sedan',
@@ -78,6 +84,7 @@ const topBrandsData = [
                 image: require('../images/carstobuy/ftyper.png')
             },
             {
+                id: 7,
                 brand: 'Jaguar',
                 model: 'F-TYPE P450',
                 type: 'Coupe',
@@ -89,6 +96,7 @@ const topBrandsData = [
                 image: require('../images/carstobuy/p450.png')
             },
             {
+                id: 8,
                 brand: 'Jaguar',
                 model: 'F-PACE S',
                 type: 'SUV',
@@ -107,6 +115,7 @@ const topBrandsData = [
         image: require('../images/bmw.png'),
         cars: [
             {
+                id: 9,
                 brand: 'BMW',
                 model: 'X5 M',
                 type: 'SUV',
@@ -118,6 +127,7 @@ const topBrandsData = [
                 image: require('../images/carstobuy/x5m.png')
             },
             {
+                id: 10,
                 brand: 'BMW',
                 model: 'X7',
                 type: 'SUV',
@@ -129,6 +139,7 @@ const topBrandsData = [
                 image: require('../images/carstobuy/x7.png')
             },
             {
+                id: 11,
                 brand: 'BMW',
                 model: 'M4 Base',
                 type: 'Coupe',
@@ -140,6 +151,7 @@ const topBrandsData = [
                 image: require('../images/carstobuy/m4.png')
             },
             {
+                id: 12,
                 brand: 'BMW',
                 model: 'M550',
                 type: 'Sedan',
@@ -158,6 +170,7 @@ const topBrandsData = [
         image: require('../images/audi.png'),
         cars: [
             {
+                id: 13,
                 brand: 'Audi',
                 model: 'TT RS',
                 type: 'Coupe',
@@ -169,6 +182,7 @@ const topBrandsData = [
                 image: require('../images/carstobuy/audittcoupe.png')
             },
             {
+                id: 14,
                 brand: 'Audi',
                 model: 'RS6',
                 type: 'Hatch',
@@ -180,6 +194,7 @@ const topBrandsData = [
                 image: require('../images/carstobuy/RS6.png')
             },
             {
+                id: 15,
                 brand: 'Audi',
                 model: 'A3',
                 type: 'Hatch',
@@ -191,6 +206,7 @@ const topBrandsData = [
                 image: require('../images/carstobuy/a3.png')
             },
             {
+                id: 16,
                 brand: 'Audi',
                 model: 'A1',
                 type: 'Hatch',
@@ -209,6 +225,7 @@ const topBrandsData = [
         image: require('../images/dodge.png'),
         cars: [
             {
+                id: 17,
                 brand: 'Dodge',
                 model: 'Challenger SXT',
                 type: 'Muscle',
@@ -220,6 +237,7 @@ const topBrandsData = [
                 image: require('../images/carstobuy/sxt.png')
             },
             {
+                id: 18,
                 brand: 'Dodge',
                 model: 'Durango SRT',
                 type: 'SUV',
@@ -231,6 +249,7 @@ const topBrandsData = [
                 image: require('../images/carstobuy/durango.png')
             },
             {
+                id: 19,
                 brand: 'Dodge',
                 model: 'Hellcat',
                 type: 'Muscle',
@@ -242,6 +261,7 @@ const topBrandsData = [
                 image: require('../images/carstobuy/hellcat.png')
             },
             {
+                id: 20,
                 brand: 'Dodge',
                 model: 'Charger',
                 type: 'Muscle',

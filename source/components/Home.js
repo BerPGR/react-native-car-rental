@@ -24,9 +24,7 @@ const Home = ({navigation}) => {
     const renderTopBrandsItem = ({item}) => {
         return (
             <TouchableOpacity style={homeStyle.brandsTouchWrapper}
-                onPress={() => navigation.navigate('Details', {
-                    item: item
-                })}
+                onPress={() => navigation.navigate('Details', {item: item})}
             >
                 <ImageBackground
                     source={item.image}
