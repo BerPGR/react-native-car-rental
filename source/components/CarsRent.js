@@ -4,12 +4,14 @@ import { ScrollView } from "react-native-gesture-handler";
 
 import Entypo from 'react-native-vector-icons/Entypo'
 import Feather from 'react-native-vector-icons/Feather'
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 
 import colors from "../colors/colors";
 import carsStyle from "../styles/carsStyle";
 
 Entypo.loadFont()
 Feather.loadFont()
+MaterialCommunityIcons.loadFont()
 
 const CarsRent = ({route, navigation}) => {
 
@@ -65,7 +67,7 @@ const CarsRent = ({route, navigation}) => {
                             <Text style={carsStyle.infoTitle}>RATING</Text>
                             <View style={carsStyle.infoItem}>
                                 <Text style={carsStyle.mainInfoText}>
-                                    {item.rating}/5
+                                <MaterialCommunityIcons name="star" size={18} color={colors.white}/>{item.rating}
                                 </Text>
                             </View>
                         </View>

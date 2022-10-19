@@ -44,7 +44,9 @@ const Details = ({route, navigation}) => {
                 <Text style={detailsStyle.carDetailsTitle}>All {item.brand} Cars</Text>
                 {
                     cars.map(car => (
-                        <TouchableOpacity key={car.id}>
+                        <TouchableOpacity key={car.id} onPress={() => navigation.navigate('CarDetails',
+                            {car: car}
+                        )}>
                             <View style={detailsStyle.allDetailsWrapper}>
                                 <View style={detailsStyle.cardLeft}>
                                     <Image source={car.image} style={detailsStyle.cardImage}/>

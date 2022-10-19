@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import Home from './source/components/Home';
 import Details from './source/components/Details';
+import CarDetails from './source/components/CarDetails';
 import Wishlist from './source/components/Wishlist'
 import Types from './source/components/Types'
 
@@ -56,6 +57,7 @@ const App = () => {
       <Stack.Navigator>
         <Stack.Screen name="TabNavigator" component={TabNavigator} options={{headerShown: false}}/>
         <Stack.Screen name="Details" component={Details} options={{headerShown: false}}/>
+        <Stack.Screen name="CarDetails" component={CarDetails} options={{headerShown: false}}/>
         <Stack.Screen name='CarsRent' component={CarsRent} options={{headerShown: false}}/>
         <Stack.Screen name="Types" component={Types} options={{headerShown: false}}/>
         <Stack.Screen name="Wishlist" component={Wishlist} options={{headerShown: false}}/>
