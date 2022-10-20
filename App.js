@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import Home from './source/components/Home';
 import Details from './source/components/Details';
-import CarDetails from './source/components/CarDetails';
+import { CarDetails } from './source/components/CarDetails';
 import Wishlist from './source/components/Wishlist'
 import Types from './source/components/Types'
 

@@ -8,7 +8,6 @@ import Entypo from 'react-native-vector-icons/Entypo'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import Feather from 'react-native-vector-icons/Feather'
 
-
 import colors from "../colors/colors";
 
 import typeStyle from '../styles/typeStyle'
@@ -46,7 +45,9 @@ const Types = ({route, navigation}) => {
                     <Text style={typeStyle.carTypesTitle}>All {item.type} Cars</Text>
                     {
                         cars.map(car => (
-                            <TouchableOpacity key={car.id}>
+                            <TouchableOpacity key={car.id}
+                                onPress={() => navigation.navigate('CarDetails', {car: car})}
+                            >
                                 <View style={typeStyle.allTypesWrapper}>
                                     <View style={typeStyle.cardLeft}>
                                         <Image source={car.image} style={typeStyle.cardImage}/>

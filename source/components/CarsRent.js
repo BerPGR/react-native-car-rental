@@ -37,12 +37,6 @@ const CarsRent = ({route, navigation}) => {
 
             {/* Description section */}
             <View style={carsStyle.descriptionWrapper}>
-                <TouchableOpacity style={carsStyle.starWrapper}
-                    onPress={() => alert("You've added this car to your Wishlist")}
-                >
-                    <Feather name="star" size={32} color={colors.white}/>
-                </TouchableOpacity>
-
                 <ScrollView>
                     <View style={carsStyle.infoTextWrapper}>
                         <Text style={carsStyle.descriptionTitle}>Description</Text>

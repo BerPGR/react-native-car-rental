@@ -13,9 +13,39 @@ Entypo.loadFont()
 Feather.loadFont()
 MaterialCommunityIcons.loadFont()
 
-const CarsRent = ({route, navigation}) => {
+let carsToWishlist = []
+
+const CarDetails = ({route, navigation}) => {
 
     const { car } = route.params
+
+    const addCarToWishlist = () => {
+        console.log(car)
+        if (carsToWishlist.length === 0) {
+            carsToWishlist.push(car)
+            alert('Car added to your wishlist.')
+            return
+        }
+
+        let count = 0;
+        for (var i = 0; i < carsToWishlist.length; i++) {
+            console.log(carsToWishlist[i].id, car.id, carsToWishlist.length)
+            if (carsToWishlist[i].id == car.id) {
+                count++;
+            }
+        }
+
+        if (count == 1) {
+            alert('This car is already in your wishlist.')
+            return
+        }
+        else {
+            carsToWishlist.push(car)
+            alert('Car added to your wishlist.')
+            return
+        }
+    }
+
     return (
         <View style={carDetailsStyle.container}>
 
@@ -37,7 +67,7 @@ const CarsRent = ({route, navigation}) => {
             {/* Description section */}
             <View style={carDetailsStyle.descriptionWrapper}>
                 <TouchableOpacity style={carDetailsStyle.starWrapper}
-                    onPress={() => alert("You've added this car to your Wishlist")}
+                    onPress={addCarToWishlist}
                 >
                     <Feather name="star" size={32} color={colors.white}/>
                 </TouchableOpacity>
@@ -93,4 +123,4 @@ const CarsRent = ({route, navigation}) => {
     )
 }
 
-export default CarsRent;
+export { CarDetails, carsToWishlist};
